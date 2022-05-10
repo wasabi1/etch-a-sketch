@@ -1,0 +1,19 @@
+.board {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: aqua;
+    height: 400px;
+    width: 400px;
+    row-gap: 2px;
+    column-gap: 1px;
+    flex: 1;
+    overflow: auto;
+}
+
+.squares {
+   
+    background-color: black;
+    height: 24pxx;
+    width: 24px;
+}
