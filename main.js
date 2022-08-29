@@ -1,13 +1,22 @@
 
-window.onload = function mkGrid(size) {
-    size = 256
-    for (let i = 0; i < size; i++) {
+
+
+
+window.onload = function mkGrid(num) {
+
+    function size() {
+        num = prompt("enter a number less than 100");
+        return num
+       }
+    let szValue = size()
+    
+    for (let i = 0; i < num; i++) {
         const board = document.getElementById("board")
         let div = document.createElement("div")
         div.className = "squares"
         board.appendChild(div)
     }
-   
+
     
 }
 
@@ -17,3 +26,4 @@ board.addEventListener("mousemove", function mousemove(event) {
     event.target.style.backgroundColor = "orange"
    
 })
+
